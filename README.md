@@ -19,10 +19,3 @@ This is my personal **portfolio website** showcasing my projects, internships, a
 ## 📷 Preview
 ![Portfolio Preview](https://your-image-link.com)
 
-## 🏗️ Installation
-To run this project locally, follow these steps:
-
-```bash
-git clone https://github.com/yourusername/portfolio.git
-cd portfolio
-open index.html
