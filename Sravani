@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sravani | Web Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(4, 4, 34);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: rgb(25, 38, 110);
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 50px 0;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+        }
+
+        .hero img {
+            width: 40%;
+            border-radius: 10px;
+        }
+
+        .section {
+            margin: 50px 0;
+            padding: 20px;
+            background: rgb(25, 38, 110);
+            border-radius: 10px;
+        }
+
+        .certificate-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .certificate-gallery img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .footer {
+            background-color: rgb(196, 196, 236);
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .footer-links {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-copyright {
+            background-color: rgb(150, 150, 190);
+            padding: 10px;
+            font-size: 14px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Sravani's Portfolio</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#internships">Internships</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="hero">
+            <div>
+                <h1>Hi, I'm <span style="color: rgb(100, 63, 134);">Sravani</span></h1>
+                <p>I am a passionate <span id="element"></span></p>
+            </div>
+            <img src="bg.webp" alt="Profile Image">
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>B.Tech 2nd-year, 4th-semester student specializing in Artificial Intelligence and Data Science.</p>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <p>Details about your projects go here.</p>
+        </section>
+
+        <section id="internships" class="section">
+            <h2>Internships</h2>
+            <p>Details about your internships go here.</p>
+        </section>
+
+        <section id="certificates" class="section">
+            <h2>Certificates</h2>
+            <div class="certificate-gallery">
+                <div class="certificate">
+                    <img src="certificate1.jpg" alt="NPTEL Python for Data Science">
+                    <p>NPTEL Python for Data Science</p>
+                    <p>Issued by: NPTEL</p>
+                    <button onclick="window.open('certificate1.pdf')">View Certificate</button>
+                </div>
+                <div class="certificate">
+                    <img src="certificate2.jpg" alt="Google Cloud Certificate">
+                    <p>Google Cloud Certification</p>
+                    <p>Issued by: Google</p>
+                    <button onclick="window.open('certificate2.pdf')">View Certificate</button>
+                </div>
+                <div class="certificate">
+                    <img src="certificate3.jpg" alt="Prodigy Internship Certificate">
+                    <p>Prodigy Internship Certificate</p>
+                    <p>Issued by: Prodigy</p>
+                    <button onclick="window.open('certificate3.pdf')">View Certificate</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Email: savaninanubala6@gmail.com</p>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#home">Home</a> |
+            <a href="#about">About</a> |
+            <a href="#services">Services</a> |
+            <a href="#contact">Contact</a>
+        </div>
+        <p>Sravani's Developer Portfolio</p>
+        <div class="footer-copyright">
+            <p>&copy; 2025 Sravani. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer.', 'Data Analyst.', 'AI Developer.', 'Front End Developer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
