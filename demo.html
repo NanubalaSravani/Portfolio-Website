@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sravani | Web Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(4, 4, 34);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: rgb(25, 38, 110);
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        
+    }
+        nav ul li a:hover {
+              color: rgb(184, 184, 216);
+              font-size: 1.04rem;
+            }        
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 50px 0;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+        }
+
+        .hero img {
+            width: 40%;
+            border-radius: 10px;
+        }
+
+        .section {
+            margin: 50px 0;
+            padding: 20px;
+            background: rgb(25, 38, 110);
+            border-radius: 10px;
+        }
+        .section a {
+            color: rgb(192, 168, 248); /* Change this to any color you want */
+            text-decoration: none;
+        }
+        .project {
+            background: rgb(15, 30, 80);
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 10px;
+        }
+        
+        .project h3 {
+            color: lightblue;
+        }
+        
+        .project button {
+            background: white;
+            color: black;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        
+        .project button:hover {
+            background: lightgray;
+        }
+        .internship {
+            background: rgb(15, 30, 80);
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 10px;
+        }
+        
+        .internship h3 {
+            color: lightblue;
+        }
+        
+        .internship button {
+            background: white;
+            color: black;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        
+        .internship button:hover {
+            background: lightgray;
+        }
+        
+        .certificate-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        .certificate {
+            background: rgb(15, 30, 80);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            width: 220px;
+        }
+        
+        .certificate img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+        
+        .certificate h3 {
+            color: lightblue;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        
+        .certificate p {
+            font-size: 14px;
+            color: white;
+            margin-bottom: 10px;
+        }
+        
+        .certificate button {
+            background: white;
+            color: black;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .certificate button:hover {
+            background: lightgray;
+        }
+        
+
+        .footer {
+            background-color: rgb(196, 196, 236);
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .footer-links {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-copyright {
+            background-color: rgb(150, 150, 190);
+            padding: 10px;
+            font-size: 14px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Sravani's Portfolio</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#internships">Internships</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="hero">
+            <div>
+                <h1>Hi, I'm <span style="color: rgb(139, 66, 207);">Sravani</span></h1>
+                <p>I am a passionate <span id="element"></span></p>
+            </div>
+            <img src="bg.webp" alt="Profile Image">
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>Aspiring Data Sciene and AI Engineer with a strong foundation in python ,data science,AI, and web development.
+               Passionate about AI-driven solutions, including building intelligent assistants with live internet features.
+               Seeking an internship in Data Science, AI, or Web Development to apply knowledge in real-world projects.</p>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>AI-Powered Chatbot</h3>
+                <p>Developed a chatbot using Python and TensorFlow that provides automated responses based on user queries.</p>
+                <button onclick="window.open('https://github.com/yourgithub/chatbot')">View Project</button>
+            </div>
+        
+            <div class="project">
+                <h3>Data Visualization Dashboard</h3>
+                <p>Created an interactive dashboard using Python and Plotly for analyzing real-time data trends.</p>
+                <button onclick="window.open('https://github.com/yourgithub/dashboard')">View Project</button>
+            </div>
+        
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p>Designed a responsive personal portfolio using HTML, CSS, and JavaScript to showcase skills and projects.</p>
+                <button onclick="window.open('https://yourportfolio.com')">View Live</button>
+            </div>
+        </section>
+        
+
+        <section id="internships" class="section">
+            <h2>Internships</h2>
+        
+            <div class="internship">
+                <h3>Data Science Intern - Prodigy</h3>
+                <p>Worked on data preprocessing, visualization, and machine learning model development.</p>
+                <button onclick="window.open('certificate3.pdf')">View Certificate</button>
+            </div>
+        
+            <div class="internship">
+                <h3>AI & ML Intern - XYZ Company</h3>
+                <p>Developed an NLP model for sentiment analysis and improved accuracy by 15% using deep learning techniques.</p>
+                <button onclick="window.open('https://xyzcompany.com')">Company Website</button>
+            </div>
+        
+        </section>
+        
+
+        <section id="certificates" class="section">
+            <h2>Certificates</h2>
+            <div class="certificate-gallery">
+                <div class="certificate">
+                    <img src="NPTELDBMS.png" alt="NPTEL DataBase Management System Certificate">
+                    <h3>NPTEL DataBase Management System</h3>
+                    <p>Issued by: NPTEL</p>
+                    <button onclick="window.open('https://nptel.ac.in/noc/E_Certificate/NPTEL25CS18S53250003001332305')">View Certificate</button>
+                </div>
+        
+                <div class="certificate">
+                    <img src="NPTELpython.png" alt="NPTEL Python for Data Science Certificate">
+                    <h3>NPTEL Python for Data Science</h3>
+                    <p>Issued by: NPTEL</p>
+                    <button onclick="window.open('https://nptel.ac.in/noc/E_Certificate/NPTEL24CS68S23780005602758706')">View Certificate</button>
+                </div>
+        
+                <div class="certificate">
+                    <img src="Google cloud computing.png" alt="Google Cloud Certificate">
+                    <h3>Google Cloud Certificate</h3>
+                    <p>Issued by: Google Skills Boost</p>
+                    <button onclick="window.open('https://www.credly.com/badges/43c3ff52-73a2-4719-ab0f-2ca5d6659063/linked_in_profile')">View Certificate</button>
+                </div>
+        
+                <div class="certificate">
+                    <img src="cisco.png" alt="Data Analytics Essentials">
+                    <h3>Data Analytics Essentials</h3>
+                    <p>Issued by: Cisco</p>
+                    <button onclick="window.open('https://www.credly.com/badges/e38f4ced-a899-4257-8ba5-94d71c22ed0d/linked_in_profile')">View Certificate</button>
+                </div>
+            </div>
+            <div class="certificate-gallery">
+                <div class="certificate">
+                    <img src="coursera.png" alt="GenAI for Data Engineers: Scaling with GenAI Certificate">
+                    <h3>GenAI for Data Engineers: Scaling with GenAI</h3>
+                    <p>Issued by: Cisco</p>
+                    <button onclick="window.open('https://coursera.org/share/d2d1906d0dfb12f8d16f08fa3b30a1d1')">View Certificate</button>
+                </div>
+                <div class="certificate">
+                    <img src="microsoft.png" alt="Generative AI for Data Science Certificate">
+                    <h3>Generative AI for Data Science</h3>
+                    <p>Issued by: NPTEL</p>
+                    <button onclick="window.open('https://coursera.org/share/3f9a44ff4f25153fba44bbca2ccde662')">View Certificate</button>
+                </div>
+        
+                <div class="certificate">
+                    <img src="linkedin.png" alt="Excel: Tips and Tricks">
+                    <h3>Excel: Tips and Tricks</h3>
+                    <p>Issued by: Linkedin</p>
+                    <button onclick="window.open('https://www.linkedin.com/learning/certificates/0935a290fdc2fcd0365d06104078fb52743d4e5052ff2968b232d44ae5c3d5f2?trk=share_certificate')">View Certificate</button>
+                </div>
+        
+                <div class="certificate">
+                    <img src="infosys.jpg" alt="A Complete Guide to Finance using Python">
+                    <h3>A Complete Guide to Finance using Python</h3>
+                    <p>Issued by: Infosys</p>
+                    <button onclick="window.open('https://verify.onwingspan.com')">View Certificate</button>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            
+            <p><a href="#"><i class="fa-solid fa-envelope"></i></a>
+                Email: <a href="mailto:savaninanubala6@gmail.com?subject=Inquiry&body=Hello Sravani, I would like to connect with you.">
+                    sravaninanubala6@gmail.com
+                </a><br>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    Linledin: <a href="https://www.linkedin.com/in/sravani-nanubala/" >Sravani Nanubala</a> <br>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    Github: <a href="https://github.com/NanubalaSravani" >Nanubala Sravani </a>
+            </p>
+            
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#home">Home</a> |
+            <a href="#about">About</a> |
+            <a href="#services">Services</a> |
+            <a href="#contact">Contact</a>
+        </div>
+        <p>Sravani's Developer Portfolio</p>
+        <div class="footer-copyright">
+            <p>&copy; 2025 Sravani. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer.', 'Data Analyst.', 'AI Developer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
